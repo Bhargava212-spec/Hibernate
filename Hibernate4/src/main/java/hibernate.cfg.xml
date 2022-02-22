@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+
+
+    <session-factory>
+
+        <property name="hbm2ddl.auto">update</property>
+
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <property name="connection.url">jdbc:mysql://localhost:3306/mysql</property>
+
+        <property name="connection.username">root</property>
+
+        <property name="connection.password">Smartkid@212
+        </property>
+
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="show_sql">true</property>
+         <property name="format_sql">true</property>
+          <property name="use_sql_comments">true</property>
+  
+<mapping class="com.pack.Vehicle"/>
+<mapping class="com.pack.User"/>
+<mapping class="com.pack.Vehicle1"/>
+<mapping class="com.pack.User1"/>
+<mapping class="com.pack.Vehicle2"/>
+<mapping class="com.pack.User2"/>
+
+        
+
+    </session-factory>
+
+
+</hibernate-configuration>
